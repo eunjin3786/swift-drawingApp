@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 import Entity
-import UseCase
+import protocol UseCase.LocalRepository
 
 class LocalRepositoryImpl: LocalRepository {
     private(set) var shapes: [Shape] = []
