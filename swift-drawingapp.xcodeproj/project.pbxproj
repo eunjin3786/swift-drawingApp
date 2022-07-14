@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BC4346B2880063E0024A936 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC4346A2880063E0024A936 /* Network */; };
+		3BC4346D2880063E0024A936 /* Repository in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC4346C2880063E0024A936 /* Repository */; };
+		3BC4346F2880063E0024A936 /* Entity in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC4346E2880063E0024A936 /* Entity */; };
+		3BC434712880063E0024A936 /* UseCase in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC434702880063E0024A936 /* UseCase */; };
+		3BC434732880063E0024A936 /* Util in Frameworks */ = {isa = PBXBuildFile; productRef = 3BC434722880063E0024A936 /* Util */; };
 		83A846E128725EFA00C777B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A846E028725EFA00C777B1 /* AppDelegate.swift */; };
 		83A846E328725EFA00C777B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A846E228725EFA00C777B1 /* SceneDelegate.swift */; };
 		83A846E528725EFA00C777B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A846E428725EFA00C777B1 /* ViewController.swift */; };
@@ -58,6 +63,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BC434712880063E0024A936 /* UseCase in Frameworks */,
+				3BC4346D2880063E0024A936 /* Repository in Frameworks */,
+				3BC4346F2880063E0024A936 /* Entity in Frameworks */,
+				3BC4346B2880063E0024A936 /* Network in Frameworks */,
+				3BC434732880063E0024A936 /* Util in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +88,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BC434692880063E0024A936 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83A846D428725EF900C777B1 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +104,7 @@
 				83A846F628725EFF00C777B1 /* swift-drawingappTests */,
 				83A8470028725EFF00C777B1 /* swift-drawingappUITests */,
 				83A846DE28725EFA00C777B1 /* Products */,
+				3BC434692880063E0024A936 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +165,13 @@
 			dependencies = (
 			);
 			name = "swift-drawingapp";
+			packageProductDependencies = (
+				3BC4346A2880063E0024A936 /* Network */,
+				3BC4346C2880063E0024A936 /* Repository */,
+				3BC4346E2880063E0024A936 /* Entity */,
+				3BC434702880063E0024A936 /* UseCase */,
+				3BC434722880063E0024A936 /* Util */,
+			);
 			productName = "swift-drawingapp";
 			productReference = 83A846DD28725EFA00C777B1 /* swift-drawingapp.app */;
 			productType = "com.apple.product-type.application";
@@ -600,6 +625,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3BC4346A2880063E0024A936 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+		3BC4346C2880063E0024A936 /* Repository */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Repository;
+		};
+		3BC4346E2880063E0024A936 /* Entity */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Entity;
+		};
+		3BC434702880063E0024A936 /* UseCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UseCase;
+		};
+		3BC434722880063E0024A936 /* Util */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Util;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 83A846D528725EF900C777B1 /* Project object */;
 }
