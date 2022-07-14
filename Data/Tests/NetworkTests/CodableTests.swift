@@ -1,5 +1,5 @@
 import XCTest
-import Entity
+import struct Entity.Rectangle
 @testable import Network
 
 class CodableTests: XCTestCase {
